@@ -1,5 +1,5 @@
 {
-  "name": "types-to-fetchers-v1",
+  "name": "types-to-fetchers-v2",
   "version": "2.3.3",
   "description": "Automatically creates fetchers from declarative descriptions of APIs and types",
   "keywords": [

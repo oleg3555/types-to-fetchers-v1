@@ -1,7 +1,7 @@
 # types-to-fetchers-v1
 
-[![NPM version](https://img.shields.io/npm/v/types-to-fetchers-v1.svg?style=flat)](https://www.npmjs.com/package/types-to-fetchers-v1)
-![Tests](https://github.com/neruchev/types-to-fetchers-v1/workflows/Tests/badge.svg)
+[![NPM version](https://img.shields.io/npm/v/types-to-fetchers-v1.svg?style=flat)](https://www.npmjs.com/package/types-to-fetchers)
+![Tests](https://github.com/neruchev/types-to-fetchers/workflows/Tests/badge.svg)
 
 Automatically creates fetchers from declarative descriptions of APIs and types. Based on [axios](https://www.npmjs.com/package/axios).
 
@@ -10,13 +10,13 @@ Automatically creates fetchers from declarative descriptions of APIs and types. 
 Install it with yarn:
 
 ```sh
-yarn add types-to-fetchers-v1
+yarn add types-to-fetchers-v2
 ```
 
 Or with npm:
 
 ```sh
-npm install types-to-fetchers-v1
+npm install types-to-fetchers-v2
 ```
 
 ## Usage

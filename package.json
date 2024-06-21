@@ -12,8 +12,8 @@
     "typescript"
   ],
   "main": "./build/src",
-  "homepage": "https://github.com/neruchev/types-to-fetchers#readme",
-  "repository": "git@github.com:neruchev/types-to-fetchers.git",
+  "homepage": "https://github.com/oleg3555/types-to-fetchers-v1#readme",
+  "repository": "git@github.com:oleg3555/types-to-fetchers-v1.git",
   "bugs": {
     "url": "https://github.com/neruchev/types-to-fetchers/issues"
   },

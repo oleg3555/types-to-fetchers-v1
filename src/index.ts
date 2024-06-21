@@ -1,4 +1,4 @@
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, ResponseType } from 'axios';
 import { compile } from 'path-to-regexp';
 
 export type Payload = {
@@ -7,6 +7,7 @@ export type Payload = {
   Params?: Record<string, string>;
   Headers?: unknown;
   Reply: unknown;
+  responseType?: ResponseType;
 };
 
 export type AxiosOptions = {
@@ -77,7 +78,7 @@ export const fetcher =
     timeout?: number,
     paramsSerializer?: Options<Config, Error>['paramsSerializer']
   ): Fetcher<Config, Error> =>
-  async ({ Body, Querystring, Params, Headers, Axios } = {} as never) => {
+  async ({ Body, Querystring, Params, Headers, Axios, responseType } = {} as never) => {
     try {
       const { data } = await axios({
         url: compile(url, { encode: encodeURIComponent })(Params),
@@ -92,6 +93,7 @@ export const fetcher =
         onUploadProgress: Axios?.onUploadProgress,
         onDownloadProgress: Axios?.onDownloadProgress,
         paramsSerializer,
+        responseType,
       });
 
       return data;
